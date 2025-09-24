@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="/Escritorio">Inicio</a>
+      <a class="navbar-brand text-white" href="/Candidato_Registro_1">Registrar Candidato</a>
+      <form action="/Candidato_Ver" method="POST" enctype="multipart/form-data">
+        <input type="submit" value="Ver Candidatos" class="navbar-brand text-black"/>
+      </form>
+      <a class="navbar-brand text-white" href="/Planilla_Mesa_Registro_1">Registrar Planilla Mesa</a>
+      <form action="/Mostrar_Planillas" method="POST" enctype="multipart/form-data">
+        <input type="submit" value="Ver Planillas Mesa" class="navbar-brand text-black"/>
+      </form>
+<!-- Codigo nuevo de voto individual  -->
+      <a class="navbar-brand text-white" href="/Voto_Individual_Registro_1">Registrar Votacion Individual</a>
+    <form action="/Voto_Individual_Ver" method="POST" enctype="multipart/form-data">
+      <input type="submit" value="Ver Votos Individual" class="navbar-brand text-black"/>
+    </form>
+
+    
+
+    <a class="navbar-brand text-white" href="/Grafica_Dinamica">Grafica Dinamica</a>
+
+
+    <form action="/Confirmar_Votos_1" method="POST" enctype="multipart/form-data">
+      <input type="submit" value="Confirmar Votos" class="navbar-brand text-black"/>
+    </form>
+
+
+<!-- Codigo nuevo de voto individual  -->
+      <a class="navbar-brand text-white" href="{{url_for('logout')}}">Salir</a>
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px" >
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#" >.</a >
+        </li>
+      </ul>
+    </div>
+  </nav>

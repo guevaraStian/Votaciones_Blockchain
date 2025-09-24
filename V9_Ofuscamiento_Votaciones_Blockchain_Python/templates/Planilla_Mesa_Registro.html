@@ -1,0 +1,178 @@
+{% if session["usuario"] == "prueba@mail.com" %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Se importa bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <STYLE type="text/css">
+      th { text-align: center;
+        font-weight: bolder;}
+        td {
+        font-weight: bolder;}
+     </STYLE>
+
+    
+    <title>Votacion electronica con Blockchain</title>
+  </head>
+    <!-- El siguiente codigo es la barra de opciones arriba -->
+  <body class="p-3 mb-2 bg-dark text-white">
+    {% include 'Barra_Inicio.html' %}
+    {% block content %}{% endblock %}
+    <!-- El siguiente codigo es el formulario para ingresar la informacion de las votaciones -->
+      <h1>Votacion electronica con Blockchain - Registrar planilla y mesa</h1>
+      <h2>Registro de planilla por mesa : </h2><br>
+      <form action="/Planilla_Mesa_Registro_2" method="POST" enctype="multipart/form-data">
+        <table class="table table-responsive table-bordered">
+          <thead class="bg-danger">
+            <tr>
+              <th scope="col" > Caracteristicas de la informacion: </th>
+              <td scope="col" > Datos que se van a ingresar: </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th scope="row" class="bg-secondary">Departamento:</th>
+                <td scope="row" class="bg-secondary"><input type="text" name="AL_31165_Var" class="form-control" /></td>
+            </tr>
+            <tr>
+                <th scope="row" class="bg-secondary">Número de mesa:</th>
+                <td scope="row" class="bg-secondary"><input type="text" name="AL_58961_Var" class="form-control" /></td>
+            </tr>
+            <tr>
+                <th scope="row" class="bg-secondary">Nombre de la opcion 1:</th>
+                <td scope="row" class="bg-secondary"><input type="text" name="AL_89655_Var" class="form-control" /></td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-secondary">Cantidad de votos de la opcion 1:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_57895_Var" class="form-control" /></td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-secondary">Nombre de la opcion 2:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_69175_Var" class="form-control" /></td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-secondary">Cantidad de votos de la opcion 2:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_53671_Var" class="form-control" /></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="bg-secondary">Votos en blanco:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_51198_Var" class="form-control" /></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="bg-secondary">Total de votantes habilitados:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_83665_Var" class="form-control" /></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="bg-secondary">Total de votos realizados:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_24633_Var" class="form-control" /></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="bg-secondary">Firmas de jurados:</th>
+              <td scope="row" class="bg-secondary"><input type="text" name="AL_94939_Var_jurados" class="form-control" /></td>
+            </tr>
+
+
+            <tr>
+              <th scope="row" class="bg-danger"><input type="submit" value="Subir" class="btn btn-secondary"/></th>
+            </tr>
+            
+      </form>
+      <br>
+      <br>
+      
+    <!-- En la siguiente tabla, se muestra la informacion del bloque creado :  -->
+
+      <table class="table table-responsive table-bordered">
+        <thead class="bg-danger">
+          <h2>En la siguiente tabla, se muestra la informacion del bloque creado : </h2>
+          <tr>
+            <th scope="col" >Partes del documento</th>
+            <td scope="col" >Informacion dentro del documento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+                <th scope="row" class="bg-secondary">NumeroBloque: </th>
+                <td scope="row" class="bg-secondary">{{AL_92466_Var}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="bg-secondary">Departamento: </th>
+                <td scope="row" class="bg-secondary">{{AL_31165_Var}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="bg-secondary">Numero de mesa: </th>
+                <td scope="row" class="bg-secondary">{{AL_58961_Var}}</td>
+            </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">Nombre opcion 1: </th>
+            <td scope="row" class="bg-secondary">{{AL_89655_Var}}</td>       
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">votacion opcion 1</th>
+            <td scope="row" class="bg-secondary">{{AL_57895_Var}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">nombre opcion 2</th>
+            <td scope="row" class="bg-secondary">{{AL_69175_Var}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">votacion opcion 2</th>
+            <td scope="row" class="bg-secondary">{{AL_53671_Var}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">Votos en blanco</th>
+            <td scope="row" class="bg-secondary">{{AL_51198_Var}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">Total de votantes habilitados</th>
+            <td scope="row" class="bg-secondary">{{AL_83665_Var}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">Total de votos realizados</th>
+            <td scope="row" class="bg-secondary">{{AL_24633_Var}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">Firmas de jurados</th>
+            <td scope="row" class="bg-secondary">{{AL_94939_Var_jurados}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">HashAnterior</th>
+            <td scope="row" class="bg-secondary">{{AL_59574_Var}}</td>
+          </tr>
+          <tr>
+            <th scope="row" class="bg-secondary">Hash Actual</th>
+            <td scope="row" class="bg-secondary">{{AL_14229_Var}}</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+          <!-- En este boton podemos ir a ver todos los bloques creados  -->
+      <form action="/Mostrar_Planillas" method="POST" enctype="multipart/form-data">
+        <input type="submit" value="Ver Bloques" class="btn btn-secondary"/>
+      </form>
+
+    </div>
+  </body>
+</html>
+
+{% else %}  
+           <a href="{{ url_for('main.login') }}">Login</a>
+{% endif %}

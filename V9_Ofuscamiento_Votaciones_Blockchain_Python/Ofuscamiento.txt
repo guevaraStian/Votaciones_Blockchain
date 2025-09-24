@@ -1,0 +1,36 @@
+# El primer proceso es cambiar las variables por nombres difíciles de entender
+pip install pyarmor==7.6.1
+pyarmor init --entry=main.py
+
+pyarmor gen --obf-code 2 --wrap-mode 1 --advanced 2 --platform auto --restrict 1 -O dist main.py
+--obf-code 2	Nivel de ofuscación más alto (reemplazo de nombres y estructura interna).
+--wrap-mode 1	Envuelve el script en una capa de protección adicional.
+--advanced 2	Activa funciones avanzadas: anti-debug, anti-tamper, entre otras.
+--platform auto	Genera el paquete para la plataforma actual. Puedes usar --platform win32, linux.x86_64, etc.
+--restrict 1	Restringe el uso del script solo al dispositivo actual.
+-O dist	Directorio de salida para el código protegido.
+myscript.py	El archivo fuente que quieres proteger.
+
+pyarmor obfuscate --advanced 4 --restrict 5 --obf-code 2 main.py
+# Usar obfuscación con los modos más fuertes disponibles:
+# - advanced = usa modos “avanzados” / super
+# - --restrict para imponer restricciones
+# - posiblemente VM mode si soportado
+
+pyarmor gen --entry your_script.py --output dist/
+
+
+pyarmor obfuscate main.py
+
+
+pip install pyinstaller
+pyinstaller main.py --onefile
+
+
+pip install nuitka
+nuitka --standalone --follow-imports --enable-plugin=pyarmor dist/main.py
+
+pyarmor licenses generate --expired "2025-12-31" USER_ID
+
+
+
