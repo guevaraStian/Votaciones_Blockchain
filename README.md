@@ -31,7 +31,7 @@ git push origin master
 Luego ingresamos a la carpeta creada e instalamos las librerias y ejecutamos el proyecto.
 
 ```Terminal de comandos
-pip install flask werkzeug lxml hashlib pymongo
+pip install flask hashlib flask_bootstrap dash plotly pandas argon2 
 python main.py
 ```
 Luego que el proyecto ya se este ejecutando, podemos verlo funcionar en la siguiente ruta url
