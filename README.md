@@ -25,6 +25,7 @@ python --version
 pip --version
 git init
 git clone https://github.com/guevaraStian/Votaciones_Blockchain.git
+cd Votaciones_Blockchain
 git push origin master
 ```
 
