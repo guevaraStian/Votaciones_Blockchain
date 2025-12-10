@@ -9,18 +9,18 @@
 ![MongoDB](https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white)
 
 Los pasos para poner en ejecución son los siguientes
-Ir a la pagina web de Python y Git, luego descargarlo para tu sistema operativo, escoger la opción "add path" con el fin de poder ejecutar comandos de Python en la terminal de comandos
+Ir a la pagina web de Python y Git, luego descargarlo para tu sistema operativo, escoger la opción "add path" con el fin de poder ejecutar comandos de Python en la terminal de comandos : 
 
 ```Pagina web
 https://www.python.org/downloads/
 https://git-scm.com/downloads
 ```
-Vamos a la pagina web de MongoDb y descargamos el ejecutable y lo ejecutamos, luego de finalizar la instalación abrimos el Compass de MongoDb
+Vamos a la pagina web de MongoDb y descargamos el ejecutable y lo ejecutamos, luego de finalizar la instalación abrimos el Compass de MongoDb.
 
 ```Pagina web
 https://www.mongodb.com/es/products/tools/compass
 ```
-Luego de tener instalado Python podemos ejecutar los siguientes comandos en la carpeta del proyecto
+Luego de tener instalado Python podemos ejecutar los siguientes comandos en la carpeta del proyecto.
 
 ```Terminal de comandos
 python --version
@@ -37,7 +37,7 @@ Luego ingresamos a la carpeta creada e instalamos las librerias y ejecutamos el 
 pip install flask hashlib flask_bootstrap dash plotly pandas argon2 
 python main.py
 ```
-Luego que el proyecto ya se este ejecutando, podemos verlo funcionar en la siguiente ruta url
+Luego que el proyecto ya se este ejecutando, podemos verlo funcionar en la siguiente ruta url.
 
 ```Pagina web
 http://localhost:8000
