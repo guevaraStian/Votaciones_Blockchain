@@ -52,16 +52,16 @@ El software tiene ingresos de informacion para los siguientes datos: candidatos,
 
 
 A continuacion ejemplo de ingreso de datos de candidato: 
-![Imagen1](images/Imagen1.png)
+![Imagen1](images/imagen1.png)
 
 
 En la siguiente imagen se muestra las planillas de votacion por mesa creadas en el software:
-![Imagen2](images/Imagen2.png)
+![Imagen2](images/imagen2.png)
 
 
 En esta tercer imagen se muestra como se registra el voto individual, en este caso voto de pais, de departamento y de municipio.
-![Imagen3](images/Imagen3.png)
+![Imagen3](images/imagen3.png)
 
 
 En el voto individual se guarda la ip del votante, tambien el sistema operativo desde donde vota, hora de votacion y todo esto en tambien va dentro del hash criptografico actual, como se muestra en la siguiente imagen.
-![Imagen4](images/Imagen4.png)
+![Imagen4](images/imagen4.png)
