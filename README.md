@@ -20,11 +20,14 @@ Vamos a la pagina web de MongoDb y descargamos el ejecutable y lo ejecutamos, lu
 ```Pagina web
 https://www.mongodb.com/es/products/tools/compass
 ```
-Luego de tener instalado Python podemos ejecutar los siguientes comandos en la carpeta del proyecto.
-
 ```Terminal de comandos
 python --version
 pip --version
+```
+
+Con el fin de descargar los archivos, procedemos a dar click en el boton verde de github y posteriormente la opcion dowload, otra forma de descargar los archivos es con git, podemos ejecutar los siguientes comandos en la carpeta del proyecto.
+
+```Terminal de comandos
 git init
 git clone https://github.com/guevaraStian/Votaciones_Blockchain.git
 cd Votaciones_Blockchain
