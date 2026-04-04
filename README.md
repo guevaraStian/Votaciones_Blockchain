@@ -20,6 +20,7 @@ Vamos a la pagina web de MongoDb y descargamos el ejecutable y lo ejecutamos, lu
 ```Pagina web
 https://www.mongodb.com/es/products/tools/compass
 ```
+En una terminal de comandos, validamos las versiones de los software instalados.
 ```Terminal de comandos
 python --version
 pip --version
