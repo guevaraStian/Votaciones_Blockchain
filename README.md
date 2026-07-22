@@ -26,17 +26,20 @@ python --version
 pip --version
 ```
 
-Pasos para intalar GIT en cada sistema operativo
+Pasos para intalar GIT en cada sistema operativo.
+
+WINDOWS
 ```Windows
 winget install --id Git.Git -e --source winget
 ```
 
+LINUX, Fedora, Arch Linux, CentOS
 ```Linux Fedora, Arch Linux, CentOS
 sudo dnf install git -y
 sudo pacman -S git
 sudo yum install git -y
 ```
-
+MAC
 ```MAC
 brew install git
 ```
