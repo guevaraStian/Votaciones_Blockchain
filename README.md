@@ -26,7 +26,7 @@ python --version
 pip --version
 ```
 
-Pasos para intalar GIT en cada sistema operativo.
+El comando de consola para intalar GIT en cada sistema operativo es el siguiente.
 
 WINDOWS
 ```Windows
