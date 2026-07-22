@@ -26,6 +26,21 @@ python --version
 pip --version
 ```
 
+Pasos para intalar GIT en cada sistema operativo
+```Windows
+winget install --id Git.Git -e --source winget
+```
+
+```Linux Fedora, Arch Linux, CentOS
+sudo dnf install git -y
+sudo pacman -S git
+sudo yum install git -y
+```
+
+```MAC
+brew install git
+```
+
 Con el fin de descargar los archivos, procedemos a dar click en el boton verde de github y posteriormente la opcion dowload, otra forma de descargar los archivos es con git, podemos ejecutar los siguientes comandos en la carpeta del proyecto.
 
 ```Terminal de comandos
